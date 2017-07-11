@@ -26,7 +26,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 590px) {
+@media (min-width: 560px) {
   .cartao {
     display: inline-block;
     width: 190px;
@@ -34,6 +34,10 @@
     flex-basis: 190px;
     flex-grow: 1;
   }
+  #mudaLayout {
+    flex-direction: inline-block;
+  }
+
 }
 
 .mural--linha .cartao {
@@ -44,4 +48,12 @@
 
 .mural--linha {
   flex-direction: column;
+}
+#mudaLayout {
+  display: none;
+}
+
+.cartao--some {
+  opacity: 0;
+  transition: 0.5s ease-in;
 }

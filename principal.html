@@ -6,37 +6,67 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ceep</title>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/opcoesDaPagina.css">
+  <link rel="stylesheet" href="css/cartao.css">
+  <link rel="stylesheet" href="css/opcoesDoCartao.css">
+  <link rel="stylesheet" href="css/novoCartao.css">
 </head>
 <body>
-  <h1 class="cabecalho container">Ceep</h1>
-  <button id="mudalayout" onclick="mudalayout()">Linhas</button>
+<header class="cabecalho container">
+  <h1 cabecalho-logo>Ceep</h1>
+  <div class="opcoesDaPagina">
+    <button id="mudalayout" class="opcoesDaPagina opcoesDaPagina-botao" onclick="mudalayout()">Linhas</button>
+  </div>
+</header>
 
-
-  <!-- <article class="cartao">
-           article.cartao>p.cartao-conteudo gera a linha abaixo
-    <p class="cartao-conteudo"></p>
-
-  </article> abaixo gera 5 linhas
-article.cartao*5>p.cartao-conteudo>lorem -->
+<form class="novoCartao container">
+  <textarea name="novoCartao-conteudo" class="novoCartao-conteudo" placeholder="Digite aqui"></textarea>
+  <input type="submit" class="novoCartao-salvar" value="salvar">
+</form>
 
 <section class="container mural">
 
-<article class="cartao">
-  <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium autem fugit ullam quasi, vero neque quas eius dolore magni excepturi facilis at dolorum corporis illo, obcaecati optio. Earum, sint nemo.</p>
-</article>
-  <article class="cartao">
+  <div class="cartao" id="cartao_1">
+    <div class="opcoesDoCartao">
+      <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="1">Remover</button>
+    </div>
+    <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium autem fugit ullam quasi, vero neque quas eius dolore magni excepturi facilis at dolorum corporis illo, obcaecati optio. Earum, sint nemo.</p>
+  </div>
+
+  <div class="cartao" id="cartao_2">
+    <div class="opcoesDoCartao">
+      <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="2">Remover</button>
+    </div>
     <p class="cartao-conteudo">Doloremque vitae tempora esse, aspernatur a adipisci ipsam ullam animi sapiente placeat voluptas explicabo praesentium voluptate accusantium similique cumque beatae natus mollitia saepe necessitatibus dolore aliquam. Voluptatum sunt optio, voluptas.</p>
-  </article>
-  <article class="cartao">
+  </div>
+
+  <div class="cartao" id="cartao_3">
+    <div class="opcoesDoCartao">
+      <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="3">Remover</button>
+    </div>
     <p class="cartao-conteudo">Odio, autem, esse. A iusto iure nostrum ut, ullam ipsa ea illo repudiandae cupiditate sit amet et, impedit aliquid dolor, adipisci, exercitationem quidem voluptates nisi error vel placeat nobis numquam!</p>
-  </article>
-  <article class="cartao">
+  </div>
+
+  <div class="cartao" id="cartao_4">
+    <div class="opcoesDoCartao">
+      <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="4">Remover</button>
+    </div>
     <p class="cartao-conteudo">Laboriosam hic numquam quisquam repellendus dolorem consequatur quam, possimus adipisci eveniet ducimus, tempore dignissimos ullam ad harum. Voluptatum numquam non cumque omnis quisquam. Excepturi earum possimus, necessitatibus ex. Quae, placeat.</p>
-  </article>
-  <article class="cartao">
+  </div>
+
+  <div class="cartao" id="cartao_5">
+    <div class="opcoesDoCartao">
+      <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="5">Remover</button>
+    </div>
     <p class="cartao-conteudo">Aperiam ullam quo aliquam, eaque tempora placeat repudiandae dolores tenetur blanditiis similique dolore laboriosam vel laudantium reprehenderit iure reiciendis cupiditate, inventore accusamus, aut totam ut, quia aliquid consequuntur nam corporis.</p>
-  </article>
+  </div>
+
 </section>
-<script src="scripts.js"></script>
+
+<script src="js/jquery.js"></script>
+<script src="principal.js"></script>
+<script src="js/removeCartao.js"></script>
+<script src="js/adicionaCartao.js"></script>
 </body>
 </html>
