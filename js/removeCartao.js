@@ -1,4 +1,4 @@
-
+(function() {
 var btns  = document.querySelectorAll(".opcoesDoCartao-remove")
 
 for (var i = 0; i < btns.length; i++) {
@@ -12,5 +12,8 @@ function removecartao(){
 
   setTimeout(function() {
     cartao.remove();
+    $(document).trigger("precisaSincronizar");
   },800);
 }
+window.removecartao = removecartao;
+}) ()

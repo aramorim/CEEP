@@ -20,3 +20,32 @@
 	}
 
 }
+@media (min-width: 560px) {
+  .cartao--textoPequeno {
+    font-size: 1em;
+    width: 11em;
+    flex-basis: 11em;
+  }
+  .cartao--textoMedio {
+    font-size: 1.5em;
+    width: 9em;
+    flex-basis: 9em;
+  }
+  .cartao--textoGrande {
+    font-size: 2em;
+    width: 6em;
+    flex-basis: 6em;
+  }
+}
+
+@media (min-width: 610px) {
+  .mural {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 900px) {
+  .mural {
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
